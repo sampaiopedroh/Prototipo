@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Formula E Dashboard</title>
+  <link rel="stylesheet" href="../style.css">
+</head>
+<body>
+  <div class="container">
+    <div class="video-container">
+      <iframe width="80%" height="60%" src="https://www.youtube.com/embed/LKqPtE-eM5g" 
+        title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; 
+        encrypted-media; gyroscope; picture-in-picture" allowfullscreen>
+      </iframe> 
+    </div>
+    <div class="data-container">
+      <h1>Telemetria</h1>
+      <div id="velocidade">
+        <span>Velocidade: 0 km/h</span>
+        <div class="progress-bar">
+          <div class="progress-bar-fill" style="width: 0%;"></div>
+        </div>
+      </div>
+      <div id="rpm">
+        <span>RPM: 0</span>
+        <div class="progress-bar">
+          <div class="progress-bar-fill" style="width: 0%;"></div>
+        </div>
+      </div>
+      <div id="marcha">Marcha: N</div>
+      <div id="bateria">
+        <span>Bateria: 0%</span>
+        <div class="progress-bar">
+          <div class="progress-bar-fill" style="width: 0%;"></div>
+        </div>
+      </div>
+      <div id="distancia-frente">
+        <span>Distância Frente: 0 cm</span>
+        <div class="progress-bar">
+          <div class="progress-bar-fill" style="width: 0%;"></div>
+        </div>
+      </div>
+      <div id="distancia-tras">
+        <span>Distância Trás: 0 cm</span>
+        <div class="progress-bar">
+          <div class="progress-bar-fill" style="width: 0%;"></div>
+        </div>
+      </div>
+      <div id="temperatura">
+        <span>Temperatura: 0 °C</span>
+        <div class="progress-bar">
+          <div class="progress-bar-fill" style="width: 0%;"></div>
+        </div>
+      </div>
+      <div id="pressao-pneus">
+        <span>Pressão dos Pneus: 0%</span>
+        <div class="progress-bar">
+          <div class="progress-bar-fill" style="width: 0%;"></div>
+        </div>
+      </div>
+      <div id="desgaste-pneus">
+        <span>Desgaste dos Pneus: 0%</span>
+        <div class="progress-bar">
+          <div class="progress-bar-fill" style="width: 0%;"></div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/paho-mqtt/1.0.2/mqttws31.min.js" type="text/javascript"></script>
+  <script src="../script.js"></script> 
+  
+  </body>
+</html>
